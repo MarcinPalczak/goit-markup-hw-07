@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
           integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
           crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
           rel="stylesheet">
@@ -133,7 +133,7 @@
 
     <section class="work section">
         <div class="work__container container">
-            <h2 class="work__title title">Czym się zajmujemy</h2>
+            <h2 class="title work__title">Czym się zajmujemy</h2>
             <ul class="work__list list">
                 <li class="work__item">
                     <div class="work__image-wrapper">
@@ -145,7 +145,7 @@
                                 height="294"
                         />
                         <div class="work__title-wrapper">
-                            <h3 class="work__title">Aplikacje komputerowe</h3>
+                            <h3 class="work__undertitle">Aplikacje komputerowe</h3>
                         </div>
                     </div>
                 </li>
@@ -159,7 +159,7 @@
                                 height="294"
                         />
                         <div class="work__title-wrapper">
-                            <h3 class="work__title">Aplikacje mobilne</h3>
+                            <h3 class="work__undertitle">Aplikacje mobilne</h3>
                         </div>
                     </div>
                 </li>
@@ -173,7 +173,7 @@
                                 height="294"
                         />
                         <div class="work__title-wrapper">
-                            <h3 class="work__title">Rozwiązania graficzne</h3>
+                            <h3 class="work__undertitle">Rozwiązania graficzne</h3>
                         </div>
                     </div>
                 </li>
@@ -497,13 +497,13 @@
         <div class="sign-up">
             <b class="sign-up__text">Zapisz się do newslettera</b>
             <form class="sign-up__form" autocomplete="off">
-                <label for="sign-up-user-mail" class="sign-up-mail visually-hidden">E-mail</label>
-                <input type="email" class="sign-up-form-input" name="sign-up-user-email" id="sign-up-user-mail"
+                <label for="sign-up-user-mail" class="sign-up__mail visually-hidden">E-mail</label>
+                <input type="email" class="sign-up__input" name="sign-up-user-email" id="sign-up-user-mail"
                        placeholder="E-mail" required>
-                <button type="submit" class="sign-up-button">
+                <button type="submit" class="button--submit">
                     Zapisz się
                     <span>
-                <svg class="icon-send-svg">
+                <svg class="icon icon--size-send">
                   <use href="./images/sprite.svg#icon-send">
                   </use>
                 </svg>
@@ -517,66 +517,66 @@
 
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-        <button class="button-close-modal" data-modal-close>
-            <svg class="icon-close-svg">
+        <button class="button--close" data-modal-close>
+            <svg class="icon icon-close">
                 <use href="./images/sprite.svg#icon-close">
                 </use>
             </svg>
         </button>
-        <form action="" class="modal-form" autocomplete="off">
-            <div class="leave-the-details-wrapper">
-                <h2 class="leave-the-details-text">Zostaw swoje dane w formularzu poniżej</h2>
+        <form action="" class="modal--form" autocomplete="off">
+            <div class="modal__wrapper">
+                <h2 class="modal__text">Zostaw swoje dane w formularzu poniżej</h2>
             </div>
-            <div class="name-field form-field">
-                <label for="user-name" class="form-field-label">Imię
-                    <input type="text" class="form-field-input" id="user-name" name="name" placeholder="" required>
-                    <svg class="icon-name-svg form-icon-svg">
+            <div class="modal__name modal__form-field">
+                <label for="user-name" class="modal__label">Imię
+                    <input type="text" class="modal__input" id="user-name" name="name" placeholder="" required>
+                    <svg class="icon icon--name icon--form">
                         <use href="./images/sprite.svg#icon-man">
                         </use>
                     </svg>
                 </label>
             </div>
-            <div class="tel-field form-field">
-                <label for="user-tel" class="form-field-label">Telefon
-                    <input type="tel" class="form-field-input" id="user-tel" name="tel" placeholder="" required>
-                    <svg class="icon-tel-svg form-icon-svg">
+            <div class="modal__tel modal__form-field">
+                <label for="user-tel" class="modal__label">Telefon
+                    <input type="tel" class="modal__input" id="user-tel" name="tel" placeholder="" required>
+                    <svg class="icon icon--tel icon--form">
                         <use href="./images/sprite.svg#icon-phone">
                         </use>
                     </svg>
                 </label>
             </div>
-            <div class="mail-field form-field">
-                <label for="user-mail" class="form-field-label">Email
-                    <input type="email" class="form-field-input" id="user-mail" name="mail" placeholder="" required>
-                    <svg class="icon-mail-svg form-icon-svg">
+            <div class="modal__mail modal__form-field">
+                <label for="user-mail" class="modal__label">Email
+                    <input type="email" class="modal__input" id="user-mail" name="mail" placeholder="" required>
+                    <svg class="icon icon--mail icon--form">
                         <use href="./images/sprite.svg#icon-envelope-filled">
                         </use>
                     </svg>
                 </label>
             </div>
-            <div class="comment-field">
-                <label for="user-comment" class="form-field-label">Komentarz
-                    <textarea type="text" class="comment-field-textarea" id="user-comment" name="comment-textarea"
+            <div class="modal__comment">
+                <label for="user-comment" class="modal__label">Komentarz
+                    <textarea type="text" class="modal__textarea" id="user-comment" name="comment-textarea"
                               placeholder="Wprowadź tekst"></textarea>
                 </label>
             </div>
-            <div class="licence-field-wrapper">
-                <div class="licence-field">
-                    <input type="checkbox" class="form-licence-checkbox visually-hidden" name="licence"
+            <div class="modal__licence-wrapper">
+                <div class="modal__licence">
+                    <input type="checkbox" class="modal__checkbox visually-hidden" name="licence"
                            value="licence-policy"
                            id="licence" required>
-                    <label for="licence" class="licence-field-label">
-                        <span class="agree-text">Oświadczam, że akceptuję</span>
-                        <a class="agreement-link" href="#">
-                            <span class="agreement-document"> Regulamin</span>
+                    <label for="licence" class="modal__licence-label">
+                        <span class="modal__agree">Oświadczam, że akceptuję</span>
+                        <a class="modal__agreement-link" href="#">
+                            <span class="modal__document"> Regulamin</span>
                         </a>
-                        <span class="agree-text">i</span>
-                        <a class="agreement-link" href="#">
-                            <span class="agreement-document"> Politykę Prywatności.</span>
+                        <span class="modal__agree">i</span>
+                        <a class="modal__agreement-link" href="#">
+                            <span class="modal__document"> Politykę Prywatności.</span>
                         </a>
                     </label>
                 </div>
-                <button type="submit" class="submit-button" aria-label="Wyślij">Wyślij
+                <button type="submit" class="modal__button--submit" aria-label="Wyślij">Wyślij
                 </button>
             </div>
         </form>
